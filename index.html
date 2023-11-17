@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa de Murales</title>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="main.css" />
+    <!--POPPINS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/e1d1f4094f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- LEAFLET CSS -->
+    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+    <!-- LEAFLET JS -->
+    <script src="js/leaflet/leaflet.js"></script>
+    <!-- LEAFLET-SIDEBAR -->
+    <link
+      rel="stylesheet"
+      href="js/leaflet-sidebar-master/src/L.Control.Sidebar.css"
+    />
+  </head>
+  <body>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container">
+        <h1>Mapa de murales de la ciudad</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          voluptatibus nisi illo. In voluptatem minima sint sapiente harum.
+        </p>
+      </div>
+    </section>
+    <!-- MAIN -->
+    <section id="main-section">
+      <div class="container">
+        <!-- sidebar -->
+        <div id="sidebar"></div>
+        <!-- map -->
+        <div id="map"></div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <i class="fa-solid fa-circle-info"></i
+        ><span>Este mapa se encuentra en constante edición</span>
+      </div>
+      <p>
+        &copy; 2023 En colaboración con Área de Geotecnologías | Municipio de
+        Tandil. Todos los derechos reservados.
+      </p>
+    </footer>
+    <!-- DATA -->
+    <script src="data/puntos_murales.js"></script>
+    <!-- MAP SCRIPT -->
+    <script src="js/map.js"></script>
+    <!-- SIDEBAR SCRIPT -->
+    <script src="js/leaflet-sidebar-master/src/L.Control.Sidebar.js"></script>
+    <script src="js/sidebar.js"></script>
+  </body>
+</html>

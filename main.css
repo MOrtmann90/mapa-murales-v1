@@ -1,0 +1,101 @@
+:root {
+  --primary: #c454cc;
+  --secondary: #737373;
+  --bg-main: #f7f7f7;
+  --bg-header: #c5dcca;
+  --bg-footer: #262626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--bg-main);
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+
+  padding: 1rem;
+}
+
+/* -------------- HERO ------------- */
+
+#hero {
+  height: 20rem;
+  background-image: url("img/lavalle_802_1.jpeg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero .container {
+  backdrop-filter: blur(4px);
+  width: 60%;
+}
+
+/* --------- SIDEBAR + MAP --------- */
+.container {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#main-section {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  margin-block: 1rem;
+  border-radius: 5px 5px 0px 0px;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+#map {
+  min-height: 50rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid #c0c0c0;
+}
+
+/* -------------- FOOTER -------------- */
+footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--bg-footer);
+  color: var(--secondary);
+}
+
+footer div {
+  margin-bottom: 0.75rem;
+}
+
+span,
+i {
+  color: var(--secondary);
+  width: 100%;
+}
+
+.fa-circle-info {
+  margin-right: 0.5rem;
+}
+
+footer p {
+  color: #fff;
+}
