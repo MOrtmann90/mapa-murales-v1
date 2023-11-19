@@ -7,28 +7,9 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 // POINT LAYER
-var geojsonMarkerOptions = {
-  radius: 12,
-  fillColor: "#ffffff",
-  color: "#bf3d3b",
-  weight: 1,
-  opacity: 1,
-  fillOpacity: 0.8,
-};
-
-let circleMarker = L.geoJSON(puntos_murales, {
-  pointToLayer: function (feature, latlng) {
-    return L.circleMarker(latlng, geojsonMarkerOptions);
-  }
-});
-
-circleMarker.addTo(map);
-
-
-var myIcon = L.icon({
-  iconUrl: 'img/camera-solid.svg',
-  iconSize: [16, 16],
-  iconAnchor: [8, 8],
+var myIcon = L.divIcon({
+  className: 'icon-container',
+  html: '<div class="circle"></div><img src="img/camera-solid.svg" width="14" height="14">'
 });
 
 let pointsLayer = L.geoJSON(puntos_murales, {
