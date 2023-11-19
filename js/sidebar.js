@@ -14,7 +14,7 @@ function mostrarInformacionDeCapa(layer) {
       sidebar.show();
     }, 500);
     sidebar.setContent(
-      ` <div class="sidebar-container"><img src="img/${layer.feature.properties.img_1}.jpeg"> <h2>Dirección:</h2> ${layer.feature.properties.name}</div>`
+      ` <div class="sidebar-container"><img src="img/${layer.feature.properties.img_1}.jpeg"> <h2>Dirección:</h2> ${layer.feature.properties.name}<h2>Muralista:</h2>${layer.feature.properties.muralista}</div>`
     );
   }
 }
